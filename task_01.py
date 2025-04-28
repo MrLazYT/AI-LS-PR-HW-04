@@ -30,7 +30,7 @@ plt.grid(True)
 plt.show()
 
 x_value = 7
-x_value_poly = poly.transform(np.array([[x_value]]))  # Ось це додали
+x_value_poly = poly.transform(np.array([[x_value]]))
 predicted = model.predict(x_value_poly)
 print(f"Predicted value at X = {x_value}: {predicted[0]:.2f}")
 
